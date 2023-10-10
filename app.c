@@ -1,11 +1,10 @@
 #include <stdio.h>
 int main()
 { 
- //enter user an integer value
- int value;
- printf("Enter value: ");
- scanf("%d",&value);
- printf("the integer value: %d ", value);
-
-    return 0;
+ //now user an character and will be display 
+char chr;
+printf("enter character :");
+scanf("%c",&chr);
+printf("Character is: %c",chr);
+return 0;
 }
