@@ -1,13 +1,14 @@
+// c program to find quotient and reminder of two integer
 #include <stdio.h>
 int main()
 {
-   //find ASCII value of a character entered by the user
-   char a;
-   printf("enter character: \n");
-   scanf("%c",&a);
-   //%d display the digital value
-   //%c display the actual character
-
-   printf("ASCII value is %c = %d", a, a);
+   int a,b,c;
+   printf("enter two integer : \n");
+   scanf("%d",&a);
+   scanf("%d",&b);
+   c = a/b;
+   printf("quotient is : %d\n", c);
+   c = a%b;
+   printf("reminder is: %d", c);
    return 0;
 }
