@@ -1,14 +1,13 @@
-// c program to find quotient and reminder of two integer
+// c program to swap two numbers
 #include <stdio.h>
 int main()
 {
-   int a,b,c;
-   printf("enter two integer : \n");
-   scanf("%d",&a);
-   scanf("%d",&b);
-   c = a/b;
-   printf("quotient is : %d\n", c);
-   c = a%b;
-   printf("reminder is: %d", c);
+   int a=5,b=3,c;
+   printf("before swap a is %d and b is %d\n",a,b);
+   c = a;
+   a = b;
+   b = c;
+
+   printf("after swap a is :%d and b is %d\n",a,b);
    return 0;
 }
