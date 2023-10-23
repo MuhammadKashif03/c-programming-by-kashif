@@ -2,12 +2,19 @@
 #include <stdio.h>
 int main()
 {
-   int a=5,b=3,c;
-   printf("before swap a is %d and b is %d\n",a,b);
-   c = a;
-   a = b;
-   b = c;
+   int num;
+   printf("enter a number:");
+   scanf("%d",&num);
 
-   printf("after swap a is :%d and b is %d\n",a,b);
+   //number completely divisbal by 2 called even otherwise odd
+   if(num % 2 == 0)
+   {
+      printf("number is even %d", num);
+   }
+   else
+   {
+      printf("number is odd %d\n", num);
+   }
+   
    return 0;
 }
