@@ -2,19 +2,27 @@
 #include <stdio.h>
 int main()
 {
-   int num;
-   printf("enter a number:");
-   scanf("%d",&num);
+   int num1,num2,num3;
+   printf("enter a three numbers:");
+   scanf("%d%d%d",&num1,&num2,&num3);
 
-   //number completely divisbal by 2 called even otherwise odd
-   if(num % 2 == 0)
+   if(num1>num2 && num1>num3)
    {
-      printf("number is even %d", num);
+      printf("num1 is large number %d",num1);
+   }
+   else if(num2>num1 && num2>num3)
+   {
+    printf("num is greater %d",num2);
+   }
+   else if(num3>num1 && num3 > num2)
+   {
+      printf("num3 is greater %d",num3);
    }
    else
    {
-      printf("number is odd %d\n", num);
+      printf("number is equal\n");
    }
-   
+
+
    return 0;
 }
