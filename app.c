@@ -1,28 +1,22 @@
-// c program to swap two numbers
 #include <stdio.h>
+int addNumber(int a , int b); //function prototype
+
 int main()
 {
-   int num1,num2,num3;
-   printf("enter a three numbers:");
-   scanf("%d%d%d",&num1,&num2,&num3);
+   int sum, num1, num2;
 
-   if(num1>num2 && num1>num3)
-   {
-      printf("num1 is large number %d",num1);
-   }
-   else if(num2>num1 && num2>num3)
-   {
-    printf("num is greater %d",num2);
-   }
-   else if(num3>num1 && num3 > num2)
-   {
-      printf("num3 is greater %d",num3);
-   }
-   else
-   {
-      printf("number is equal\n");
-   }
+   printf("enter two number: ");
+   scanf("%d %d", &num1, &num2);
 
-
+   sum = addNumber(num1,num2); //call function
+   printf("sum is %d", sum);
    return 0;
 }
+
+int addNumber(int a , int b)   //funtion statement
+{
+  int result;
+  result = a + b;
+  return result;    //return statement
+}
+
