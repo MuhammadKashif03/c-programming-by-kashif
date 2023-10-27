@@ -1,18 +1,23 @@
+//programe to find the average of n number using array
 #include <stdio.h>
 int main()
 {
-  int array[5];
-  printf("enter integer array:\n");
-  for(int i =0; i<5; ++i)
-  {
-    scanf("%d", &array[i]);
-  }
+ int marks[10],i,n,sum=0;
+ double average;
 
-  //display the array
-  printf("display the array\n");
-  for(int i =0 ; i<5; ++i)
-  {
-    printf("%d\n",array[i]);
-  }
+ printf("number of element");
+ scanf("%d",&n);
+
+ for(i=0;i<n;++i)
+ {
+  printf("number entered%d: ",i+1);
+  scanf("%d",&marks[i]);
+  sum += marks[i];
+  
+ }
+//find the average
+//convert sum to double
+average = (double) sum/n;
+printf("average is %.2lf", average);
  return 0;
 }
